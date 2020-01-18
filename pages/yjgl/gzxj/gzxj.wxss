@@ -1,0 +1,32 @@
+.operation {
+  position: fixed;
+  top: 50rpx;
+  right: 50rpx;
+  background: white;
+  padding: 10rpx;
+  border-radius: 15rpx;
+}
+
+.operation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.item-text {
+  font-size: 22rpx;
+}
+
+.item-start-text {
+  color: #1afa29;
+}
+
+.item-stop-text {
+  color: #d81e06;
+}

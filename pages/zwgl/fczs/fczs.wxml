@@ -1,0 +1,50 @@
+<scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;" >
+ <navigator class="list-item" url="../fcxq/fcxq"> 
+      <view class="message-item" bindtap="a">
+        <image class="message-left" src="{{a3}}" />
+        <view class="message-right">
+          <view class="message-title">{{a0}}</view>
+          <view class="message-time">
+            <image class="message-time-icon" src="../../../icons/zhcg-index/img_time.png" />
+            <view class="message-time-value">{{a1}}</view>
+          </view>
+        </view>
+      </view>
+   </navigator>    
+  <navigator class="list-item" url="../fcxq/fcxq"> 
+      <view class="message-item" bindtap="activityDetail">
+        <image class="message-left" src="{{b3}}" />
+        <view class="message-right">
+          <view class="message-title">{{b0}}</view>
+          <view class="message-time">
+            <image class="message-time-icon" src="../../../icons/zhcg-index/img_time.png" />
+            <view class="message-time-value">{{b1}}</view>
+          </view>
+        </view>
+      </view>
+  </navigator>  
+  <navigator class="list-item" url="../fcxq/fcxq"> 
+      <view class="message-item" bindtap="activityDetail">
+        <image class="message-left" src="{{c3}}" />
+        <view class="message-right">
+          <view class="message-title">{{c0}}</view>
+          <view class="message-time">
+            <image class="message-time-icon" src="../../../icons/zhcg-index/img_time.png" />
+            <view class="message-time-value">{{c1}}</view>
+          </view>
+        </view>
+      </view>
+  </navigator>  
+  <navigator class="list-item" url="../fcxq/fcxq"> 
+      <view class="message-item" bindtap="activityDetail">
+        <image class="message-left" src="{{d3}}" />
+        <view class="message-right">
+          <view class="message-title">{{d0}}</view>
+          <view class="message-time">
+            <image class="message-time-icon" src="../../../icons/zhcg-index/img_time.png" />
+            <view class="message-time-value">{{d1}}</view>
+          </view>
+        </view>
+      </view>
+  </navigator>  
+</scroll-view>

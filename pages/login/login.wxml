@@ -1,0 +1,13 @@
+<image class="bg" src="cloud://baohua-47vyy.6261-baohua-47vyy-1300787128/loginbg.png" />
+<form bindsubmit="login">
+  <view class="container">
+    <image class="logo" mode="widthFix" src="../../icons/login/img_logo.png" />
+    <view class="input-section">
+      <input class="username" name="username" type="text" value="{{username}}" placeholder="请输入账号"></input>
+      <input class="password" name="password" type="password" value="{{password}}" placeholder="请输入密码"></input>
+      <view class="remeber">
+        <checkbox bindtap="clickRemember" checked="{{remember}}"></checkbox>记住密码</view>
+    </view>
+    <button type="primary" form-type="submit" class="login-button">登录</button>
+  </view>
+</form>

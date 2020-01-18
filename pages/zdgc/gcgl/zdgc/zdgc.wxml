@@ -1,0 +1,43 @@
+
+           <view class="list-item" data-id="id" bindtap="zdgcxq">
+
+              <view class="item-row">
+                <view class="row-value"><text class="title" space="nbsp">项目名称 ： </text>{{list.keyproProName}}</view>
+              </view>
+
+              <view class="item-row"> 
+                <view class="row-value"><text class="title" space="nbsp">项目标题 ： </text>{{list.keyproProTitle}}</view>
+              </view>
+
+              <view class="item-row">
+                <view class="row-value"><text class="title" space="nbsp">建设规模 ： </text>{{list.keyproBuildScale}}</view>
+              </view>
+
+              <view class="item-row">  
+                <view class="row-value"><text class="title" space="nbsp">项目投资 ： </text>{{list.keyproProInvestment}}</view>
+              </view>
+
+              <view class="item-row">  
+                <view class="row-value"><text class="title" space="nbsp">开工日期 ： </text>{{list.createTime}}</view>
+              </view>
+
+              <view class="item-row">  
+                <view class="row-value"><text class="title" space="nbsp">竣工日期 ： </text>{{list.keyproProFinishTime}}</view>
+              </view>
+
+              <view class="item-row">  
+                <view class="row-value"><text class="title" space="nbsp">项目工期 ： </text>{{list.keyproProOverdueTime}}</view>
+              </view>
+
+              <view class="item-row">  
+                <view class="row-value"><text class="title" space="nbsp">具体位置 ： </text>{{list.keyproBuildSpace}}</view>
+              </view>
+
+              <view class="item-row">  
+                <view class="row-value"><text class="title" space="nbsp">问题描述 ： </text>{{list.keyproProContent}}</view>
+              </view>
+
+              <view class="container"> <!-- 分割线 --> <view class="divLine"></view></view>
+            </view>
+
+

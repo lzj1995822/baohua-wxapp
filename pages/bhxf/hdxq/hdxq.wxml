@@ -1,0 +1,36 @@
+<view class="">
+  <view class="item">
+    <view class="item-row">
+      <view class="row-name">活动名称</view>
+      <view class="row-value">{{item}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">活动时间</view>
+      <view class="row-value">{{item}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">报名时间</view>
+      <view class="row-value">{{item}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">截止时间</view>
+      <view class="row-value">{{item}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">服务类别</view>
+      <view class="row-value">{{item}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">活动地址</view>
+      <view class="row-value">{{item}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">服务对象</view>
+      <view class="row-value">{{item}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">志愿者保障</view>
+      <view class="row-value">{{item}}</view>
+    </view>
+  </view>
+</view>

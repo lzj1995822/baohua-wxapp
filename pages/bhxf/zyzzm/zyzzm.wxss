@@ -1,0 +1,121 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: white;
+  padding-bottom: 20rpx;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  padding:20rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+.col{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.input-name{
+  flex-shrink: 0;
+}
+.input-value{
+}
+.section-title{
+  text-align: center;
+  background:#FA3530;
+  color: white;
+  font-size: 35rpx;
+  padding:10rpx;
+}
+.px{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding:10rpx;
+}
+.px-item{
+  margin:10rpx 20rpx;
+  border: 5rpx solid #FA3530;
+  border-radius: 25rpx;
+  box-sizing: border-box;
+  width: 200rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:10rpx;
+}
+.px-name{
+width: 140rpx;
+font-size: 25rpx;
+overflow:hidden; 
+text-overflow:ellipsis;
+white-space:nowrap; 
+
+}
+.px-delete{
+height: 30rpx;
+width: 30rpx;
+
+}
+.personal-strength-section textarea{
+  border: 2rpx solid gainsboro;
+  width:95%;
+  margin: 10rpx 2.5%;
+  padding: 20rpx 15rpx;
+}
+.add-certificate-button{
+  color: blue;
+  text-align: center;
+  padding:15rpx;
+}
+.photo-container {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  margin: 30rpx 20rpx 20rpx 20rpx;
+  padding: 20rpx 15rpx;
+  font-size: 30rpx;
+  border: 2rpx solid gainsboro;
+}
+
+.photo-left {
+  width: 40%;
+  color: grey;
+}
+
+.photo-image {
+  height: 100rpx;
+}
+
+.photo-image-photo{
+  height: 100rpx;
+  width: 100rpx;
+  
+}
+
+.photo-right {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.image-choose {
+  height: 70rpx;
+  width: 70rpx;
+  margin: auto 0;
+}
+
+.image-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30rpx;
+  width: 30rpx;
+  background: whitesmoke;
+  border-radius: 50%;
+}

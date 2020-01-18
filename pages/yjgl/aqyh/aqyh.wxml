@@ -1,0 +1,80 @@
+<swiper current="{{0}}" class="swiper-tab" display-multiple-items="2" duration="300">
+  <swiper-item>
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" catchtap="switchNav">待处理</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" catchtap="switchNav">已处理</view>
+  </swiper-item>
+</swiper>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+ <!-- 待处理 -->
+    <swiper-item>
+      <scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;" enable-flex="true">
+        <!-- <view>测试</view> -->
+        <view class="list-section">  
+          <block wx:for="{{list}}" wx:key="id">
+            <navigator class="list-item" url="../cjxq/cjxq?id=id"> 
+              <view class="list-item" data-id="id" bindtap="activityDetail">
+                <view class="item-row">
+                  <view class="row-name">{{item.people}}</view>
+                </view>
+                <view class="item-row">
+                  <!-- <view class="row-name">上报时间</view> -->
+                    <view class="row-value"><text class="title" space="nbsp">确立问题时间 ： </text>{{item.createTime}}</view>
+                </view>
+                <view class="item-row">
+                  <!-- <view class="row-name">问题来源</view> -->
+                  <view class="row-value"><text class="title" space="nbsp">上报地址 ： </text>{{item.address}}</view>
+                </view>
+                <view class="item-row">
+                  <!-- <view class="row-name">所属大类</view> -->
+                 <view class="row-value"><text class="title" space="nbsp">企业名称 ： </text>{{item.name}}</view>
+                </view>
+                <view class="item-row">
+                  <!-- <view class="row-name">问题描述</view> -->
+                    <view class="row-value"><text class="title" space="nbsp">隐患描述 ： </text>{{item.remarks}}</view>
+                </view>
+                <view class="container"> <!-- 分割线 --> <view class="divLine"></view></view>
+               </view>
+              </navigator>
+            </block>
+            <view wx:if="{{list.length == 0}}" class="non-data-section">
+              <image class='non-data-icon' src="../../../icons/load_fail.png" />
+              <view class="non-data-text">没有数据哎...</view>
+            </view>
+        </view>     
+      </scroll-view>
+    </swiper-item>
+<!-- 待处理主体内容 -->
+    <swiper-item>
+      <scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;" enable-flex="true">
+        <!-- <view>处理</view> -->
+        <view class="list-section">  
+          <block wx:for="{{list1}}" wx:key="id">
+            <view class="list-item" data-id="id" bindtap="activityDetail">
+                <view class="item-row">
+                  <view class="row-name">{{item.people}}</view>
+                </view>
+                <view class="item-row">
+                   <view class="row-value"><text class="title" space="nbsp">确立问题时间 ： </text>{{item.createTime}}</view>
+                </view>
+                <view class="item-row">
+                    <view class="row-value"><text class="title" space="nbsp">上报地址 ： </text>{{item.address}}</view>
+                </view>
+                <view class="item-row">
+                 <view class="row-value"><text class="title" space="nbsp">企业名称 ： </text>{{item.name}}</view>
+                </view>
+                <view class="item-row">         
+                <view class="row-value"><text class="title" space="nbsp">隐患描述 ： </text>{{item.remarks}}</view>
+                </view>
+                <view class="container"> <!-- 分割线 --> <view class="divLine"></view></view>
+              </view>
+         </block>
+        </view>     
+      </scroll-view>
+    </swiper-item>
+</swiper> 
+<navigator url="../yhwt/yhwt">
+  <image class="report-problem-icon" src="../../../icons/add.png" />
+</navigator>

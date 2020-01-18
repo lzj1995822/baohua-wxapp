@@ -1,0 +1,38 @@
+<cu-custom isToMine="{{isToMine}}" bgColor="#4F5DE3" fontColor="white"><view slot="title">智慧环卫</view></cu-custom><image class="bg" mode="widthFix" src="cloud://baohua-47vyy.6261-baohua-47vyy-1300787128/img_cgbg.png" />
+<view class="container">
+  <navigator url="../hwwt/hwwt">
+    <view class="problem-section">
+      <image class="problem-add-icon" src="../../../icons/zhcg-index/img_ques.png" />
+      <view class="proble-add-text">问题上报</view>
+    </view>
+  </navigator>
+  <image class="message-top-icon" mode="widthFix" src="../../../icons/zhcg-index/img_info.png" />
+  <view class="message-section">
+    <navigator url="/pages/ggxq/ggxq">
+      <view class="message-item">
+        <image class="message-left" src="../../../icons/zhcg-index/message_icon.png" />
+        <view class="message-right">
+          <view class="message-title">智慧环卫系统正式上线</view>
+          <view class="message-time">
+            <image class="message-time-icon" src="../../../icons/zhcg-index/img_time.png" />
+            <view class="message-time-value">2019-11-18</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+
+    <navigator url="/pages/ggxq/ggxq">
+      <view class="message-item">
+        <image class="message-left" src="../../../icons/zhcg-index/message_icon.png" />
+        <view class="message-right">
+          <view class="message-title">智慧环卫系统正式上线</view>
+          <view class="message-time">
+            <image class="message-time-icon" src="../../../icons/zhcg-index/img_time.png" />
+            <view class="message-time-value">2019-11-18</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <navigator url="/pages/zhhw/zhhw-hwgg/zhhw-hwgg"><view class="load-more-section">查看更多</view></navigator>
+</view>

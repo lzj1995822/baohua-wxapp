@@ -1,0 +1,8 @@
+@import "/wxParse/wxParse.wxss";
+page{
+  background: #F0F0F0;
+ font-size: 30rpx;
+}
+input{
+  height: 50rpx;
+}

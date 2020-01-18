@@ -1,0 +1,88 @@
+<view class="head-container">
+  <navigator url="/pages/mine/mine" class="mine-section" style="top:{{Custom.top}}px;height: {{Custom.height}}px;position:fixed">
+    <image style="height: {{Custom.height}}px;width: {{Custom.height}}px" src="/icons/index/mine.png" />
+  </navigator>
+  <image class="head-bg" src="cloud://baohua-47vyy.6261-baohua-47vyy-1300787128/index_bg.png" mode="widthFix" />
+  <view class="message-container">
+    <image class="message-icon" src="../../icons/index/img_tz.png" />
+    <view class="message-text">
+      <view class="scroll-text">智慧宝华移动平台正式投入使用</view>
+    </view>
+  </view>
+  <view class="operation-container">
+    <view class="operation-item">
+      <navigator url="/pages/bhxf/index/index?isAdmin=true">
+        <image class="operation-icon" src="../../icons/index/img_bhxf.png" />
+        <view class="operation-text">宝华先锋</view>
+      </navigator>
+    </view>
+    <view class="operation-item">
+      <navigator url="/pages/zhcg/index/index?isAdmin=true">
+        <image class="operation-icon" src="../../icons/index/img_zhcg.png" />
+        <view class="operation-text">智慧城管</view>
+      </navigator>
+    </view>
+    <view class="operation-item">
+      <navigator url="/pages/zhhw/index/index?isAdmin=true">
+        <image class="operation-icon" src="../../icons/index/img_zhhw.png" />
+        <view class="operation-text">智慧环卫</view>
+      </navigator>
+    </view>
+    <view class="operation-item">
+      <navigator url="/pages/zhcj/index/index?isAdmin=true">
+        <image class="operation-icon" src="../../icons/index/img_zhcj.png" />
+        <view class="operation-text">智慧村建</view>
+      </navigator>
+    </view>
+    <view class="operation-item">
+      <navigator url="/pages/yjgl/index/index?isAdmin=true">
+        <image class="operation-icon" src="../../icons/index/img_yjgl.png" />
+        <view class="operation-text">应急管理</view>
+      </navigator>
+    </view>
+    <view class="operation-item">
+      <navigator url="/pages/zwgl/index/index?isAdmin=true">
+        <image class="operation-icon" src="../../icons/index/img_zwgl.png" />
+        <view class="operation-text">政务管理</view>
+      </navigator>
+    </view>
+    <view class="operation-item">
+      <navigator url="/pages/zzwg/index/index?isAdmin=true">
+        <image class="operation-icon" src="../../icons/index/img_zzwg.png" />
+        <view class="operation-text">综治网络</view>
+      </navigator>
+    </view>
+    <view class="operation-item">
+      <navigator url="/pages/zdgc/index/index?isAdmin=true">
+        <image class="operation-icon" src="../../icons/index/img_zdgc.png" />
+        <view class="operation-text">重点工程</view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<view class="inform-container">
+  <image class="inform-image" src="../../icons/index/img_dt.png" mode="scaleToFill" />
+  <view class="inform-section">
+  
+    <block wx:for="{{newsInfList}}" wx:key="id">
+      <navigator class="inform-item" url='/pages/ggxq/ggxq?id=id'>
+        <view class="inform-item-left">
+          <view class="inform-item-left-top">{{item.title}}</view>
+          <view class="inform-item-left-bottom">
+            <view class="inform-item-left-bottom-left">模块：{{item.yhzh}}</view>
+            <view class="inform-item-left-bottom-right">
+              <image class="time-icon" src="../../icons/index/img_time.png" />
+              <view>
+                上传时间：{{item.createTimeStr}}
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="inform-item-right">〉</view>
+      </navigator>
+    </block>
+
+    <view class="inform-text">查看更多</view>
+  </view>
+</view>

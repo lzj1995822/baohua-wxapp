@@ -1,0 +1,31 @@
+    <scroll-view class="list-section" scroll-y='true' enable-flex='true'>
+      <!-- <view>处理</view> -->
+      <view class="list-section">  
+        <block wx:for="{{list}}" wx:key="id">
+           <view class="list-item" data-id="id" bindtap="zdgcxq">
+
+              <view class="item-row">
+                <view class="row-value"><text class="title" space="nbsp">活动名称 ： </text>{{item.hdmc}}</view>
+              </view>
+
+              <view class="item-row"> 
+                <view class="row-value"><text class="title" space="nbsp">活动时间 ： </text>{{item.hdsj}}</view>
+              </view>
+
+              <view class="item-row">
+                <view class="row-value"><text class="title" space="nbsp">服务类别 ： </text>{{item.fwlb}}</view>
+              </view>
+
+              <view class="item-row">  
+                <view class="row-value"><text class="title" space="nbsp">活动地址 ： </text>{{item.hddz}}</view>
+              </view>
+
+              <view class="container"> <!-- 分割线 --> <view class="divLine"></view></view>
+            </view>
+         </block>
+         <view wx:if="{{list == null}}" class="non-data-section">
+           <view class="non-data-text">查找不到数据哎...</view>
+           <image class='non-data-icon' src="../../../icons/load_fail.png" />
+         </view>
+      </view>     
+    </scroll-view>

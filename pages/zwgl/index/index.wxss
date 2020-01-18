@@ -1,0 +1,28 @@
+page{
+  
+}
+.bg{
+  width:100%;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  top:430rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.operation-section {
+  width: 90%;
+  margin:5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.operation-item-icon {
+  height: 230rpx;
+  width: 320rpx;
+}

@@ -1,0 +1,15 @@
+.row{
+  border-bottom: 1px solid gainsboro;
+  padding:20rpx;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  font-size: 28rpx;
+}
+.row-name{
+  width:25%;
+}
+.row-value{
+  height: 30rpx;
+  flex-grow: 1;
+}

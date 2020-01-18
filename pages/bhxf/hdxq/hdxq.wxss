@@ -1,0 +1,7 @@
+/* pages/bhxf/hdxq/hdxq.wxss */
+.title{
+  color: #F5DEB3;
+}
+.zycglist{
+  background-color: #F8F8FF;
+}

@@ -1,0 +1,12 @@
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:20rpx;
+  border-bottom: 1px solid gainsboro;
+  background:white;
+}
+image{
+  height: 80rpx;
+  width: 80rpx;
+}

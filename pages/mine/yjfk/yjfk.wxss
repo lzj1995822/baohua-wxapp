@@ -1,0 +1,9 @@
+textarea{
+  margin: 1%;
+  padding:10rpx;
+  border: 1px solid gainsboro;
+  font-size: 28rpx;
+  width: 98%;
+  box-sizing: border-box;
+  background: white;
+}

@@ -1,0 +1,51 @@
+<cu-custom isToMine="{{isToMine}}" bgColor="#4F5DE3" fontColor="white"><view slot="title">应急管理</view></cu-custom>
+<image class="bg" mode="widthFix" src="cloud://baohua-47vyy.6261-baohua-47vyy-1300787128/img_cgbg.png" />
+<view class="container">
+
+  <view class="operation-section">
+    <navigator url="../aqyh/aqyh">
+      <image class="operation-item-icon" src="../../../icons/yjgl/img_aqyh.png" />
+    </navigator>
+    <navigator url="../gzxj/gzxj">
+    <image class="operation-item-icon" src="../../../icons/yjgl/img_gzxj.png" />
+    </navigator>
+  </view>
+
+  <image class="message-top-icon" mode="widthFix" src="../../../icons/zhcg-index/img_info.png" />
+  <view class="message-section">
+    <navigator url="/pages/ggxq/ggxq">
+      <view class="message-item">
+        <view class="message-right">
+          <view class="message-title">关于启用国家综合性消防救援队伍 人员证明等通知</view>
+          <view class="message-time">
+            <image class="message-time-icon" src="../../../icons/zhcg-index/img_time.png" />
+            <view class="message-time-value">2019-11-18</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="/pages/ggxq/ggxq">
+      <view class="message-item">
+        <view class="message-right">
+          <view class="message-title">巡检问题处理流程</view>
+          <view class="message-time">
+            <image class="message-time-icon" src="../../../icons/zhcg-index/img_time.png" />
+            <view class="message-time-value">2019-11-18</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="/pages/ggxq/ggxq">
+      <view class="message-item">
+        <view class="message-right">
+          <view class="message-title">强化风险辨识 遵守操作规程 确保“煤改气”等通知</view>
+          <view class="message-time">
+            <image class="message-time-icon" src="../../../icons/zhcg-index/img_time.png" />
+            <view class="message-time-value">2019-11-18</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="load-more-section">查看更多</view>
+</view>

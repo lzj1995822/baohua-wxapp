@@ -1,0 +1,86 @@
+page {
+  background: white;
+}
+
+.container {
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1rpx solid gainsboro;
+}
+
+.input-name {
+  color: rgb(163, 162, 162);
+  padding: 20rpx;
+  font-size: 27rpx;
+  width: 150rpx;
+}
+
+.input-value {
+  flex-grow: 1;
+  font-size: 27rpx;
+}
+
+.textarea {
+  border: 1rpx solid gainsboro;
+  margin: 20rpx;
+  padding: 20rpx;
+}
+
+/* 添加图片 */
+
+.photo-section {
+}
+
+.section-title {
+  background: rgb(209, 211, 214);
+  padding: 15rpx;
+}
+
+.section-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10rpx;
+}
+
+.photo-item {
+  height: 130rpx;
+  width: 130rpx;
+  position: relative;
+  margin: 20rpx;
+}
+
+.photo-image {
+  height: 100%;
+  width: 100%;
+}
+
+.delete-icon {
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  top: -5rpx;
+  right: -5rpx;
+}
+
+.image-choose {
+  height: 100rpx;
+  width: 100rpx;
+  margin-left: 20rpx;
+}
+
+/* 添加图片 */
+
+.upload-button {
+  margin: 20rpx 0;
+}

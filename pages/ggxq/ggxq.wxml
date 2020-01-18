@@ -1,0 +1,6 @@
+<!-- 引入模板 -->
+<import src="/wxParse/wxParse.wxml"/>
+<view class="title">{{news.title}}</view>
+<view class="create-time">{{news.createTimeStr}}</view>
+<!-- 这里data中article为bindName -->
+<template class="content" is="wxParse" data="{{wxParseData:content.nodes}}"/>

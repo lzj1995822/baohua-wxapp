@@ -1,0 +1,37 @@
+<scroll-view class="list-section" scroll-y='true' enable-flex='true'>
+ <!-- <view>处理</view> -->
+      <view class="list-section">  
+        <block wx:for="{{list}}" wx:key="id">
+           <view class="list-item" data-id="id">
+              <view class="list-section">
+                <view class="list-item">
+                  <view class="left">
+                    <image class="cph-icon" src="/icons/zzwg/cph.png" mode="widthFix"/>
+                    <view class="cph-text">{{item.vechiclesNumber}}</view>
+                  </view>
+                  <view class="right">
+                    <view class="right-row">
+                      <image class="row-icon" src="/icons/zzwg/name.png" />
+                      <view class="row-name">车主姓名：</view>
+                      <view class="row-value">{{item.vehiclesHolderName}}</view>
+                    </view>
+                    <view class="right-row">
+                      <image class="row-icon" src="/icons/zzwg/car.png" />
+                      <view class="row-name">车辆型号：</view>
+                      <view class="row-value">{{item.vechiclesTypeName}}</view>                                            
+                    </view>
+                    <view class="right-row">
+                      <image class="row-icon" src="/icons/zzwg/ph.png" />
+                      <view class="row-name">联系方式：</view>
+                      <view class="row-value">{{item.contact}}</view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <navigator url="../zdcl-add/zdcl-add">
+                <image class="add-icon" src="/icons/add.png" />
+              </navigator>
+            </view>
+         </block>
+    </view>   
+</scroll-view>

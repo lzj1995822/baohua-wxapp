@@ -1,0 +1,24 @@
+/* pages/zhcj/cjxq/cjxq.wxss */
+/* pages/bhxf/cgxq/cgxq.wxss */
+page{
+  background: white;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding:10rpx;
+  font-size: 28rpx;
+}
+.item-row{
+  display: flex;
+  flex-direction: row;
+  margin:5rpx 0;
+}
+.row-name{
+  color: rgb(155, 154, 154);
+}
+.content{
+  margin:15rpx;
+}

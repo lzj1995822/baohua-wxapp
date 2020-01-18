@@ -1,0 +1,13 @@
+<view class="nav-bar-container" style="height:{{CustomBar}}px">
+  <view class="nav-bar-section" style="height:{{CustomBar}}px;background:{{bgColor}};color:{{fontColor}};padding-top:{{StatusBar}}px;width:100%;position: fixed;">
+    <view class="left" bindtap="toBack" wx:if="{{!isToMine}}">
+      <image class="back-icon" src="back.png" />
+    </view>
+    <view class="left" bindtap="toMine" wx:if="{{isToMine}}">
+      <image class="mine-icon" src="mine.png" />
+    </view>
+    <view class="title" style="top:{{StatusBar}}px">
+      <slot name="title"></slot>
+    </view>
+  </view>
+</view>

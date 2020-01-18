@@ -1,0 +1,91 @@
+page {
+  background: white;
+}
+
+/**index.wxss**/
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  height: 70rpx;
+  position: fixed;
+  top: 0;
+}
+
+.swiper-tab-list {
+  line-height: 65rpx;
+  font-size: 30rpx;
+}
+
+.on {
+  color: #4f5de3;
+  border-bottom: 5rpx solid #4f5de3;
+}
+
+.swiper-box {
+  margin-top: 70rpx;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+/* .list-section{
+  height: 100%;
+} */
+.non-data-section {
+  height: 300rpx;
+  width: 300rpx;
+  margin: 200rpx auto;
+  text-align: center;
+}
+
+.non-data-icon {
+  width: 100%;
+  height: 300rpx;
+}
+
+/* .non-data-text {
+
+} */
+
+.report-problem-icon {
+  position: fixed;
+  height: 100rpx;
+  width: 100rpx;
+  right: 100rpx;
+  bottom: 150rpx;
+}
+.list-section{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.non-data-section{
+  height: 300rpx;
+  width: 300rpx;
+  margin-top: 200rpx;
+  text-align: center;
+}
+.non-data-icon{
+  width: 100%;
+  height: 300rpx;
+
+}
+/* .non-data-text{
+
+} */
+.title{
+  color: #9BCD9B;
+}
+.zycglist{
+  background-color: #F8F8FF;
+}
+.row-name{
+  color: #9BCD9B;
+}
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 2rpx;
+}

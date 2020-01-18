@@ -1,0 +1,16 @@
+<view class="row">
+  <view class="row-name">头像</view>
+  <image class="row-value" src="{{userInfo.uiphoto?userInfo.uiphoto:'/icons/mine/touxiang_default.png'}}"/>
+</view>
+<view class="row">
+  <view class="row-name">名字</view>
+  <view class="row-value">{{userInfo.uinickname}}</view>
+</view>
+<view class="row">
+  <view class="row-name">部门</view>
+  <view class="row-value">{{userInfo.uisubordinatedepartment}}</view>
+</view>
+<view class="row">
+  <view class="row-name">联系电话</view>
+  <view class="row-value">无</view>
+</view>

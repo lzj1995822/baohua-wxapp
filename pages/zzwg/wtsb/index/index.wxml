@@ -1,0 +1,41 @@
+    <scroll-view class="list-section" scroll-y='true' enable-flex='true'>
+      <!-- <view>处理</view> -->
+      <view class="list-section">  
+        <block wx:for="{{list}}" wx:key="id">
+        <view class="message-item">
+           <view class="message-left" data-id="id" bindtap="zdgcxq">
+
+              <view class="item-row">
+                <view class="row-value"><text class="title" space="nbsp">事故名称 ： </text>{{item.trafficAccidentName}}</view>
+              </view>
+
+              <view class="item-row"> 
+                <view class="row-value"><text class="title" space="nbsp">事故性质 ： </text>{{item.trafficAccidentKindName}}</view>
+              </view>
+
+              <view class="item-row">
+                <view class="row-value"><text class="title" space="nbsp">事故类型 ： </text>{{item.trafficAccidentTypeName}}</view>
+              </view>
+
+              <view class="item-row">  
+                <view class="row-value"><text class="title" space="nbsp">发生时间 ： </text>{{item.trafficAccidentStartDateTime}}</view>
+              </view>
+              
+              <view class="item-row">  
+                <view class="row-value"><text class="title" space="nbsp">发生网格 ： </text>{{item.netGridName}}</view>
+              </view>
+
+             
+            </view>
+            <view class="message-right">
+             <view>{{item.trafficAccidentStatusTypeName}}</view>
+            </view>
+         </view>   
+         </block>
+         <view wx:if="{{list.length == 0}}" class="non-data-section">
+           <image class='non-data-icon' src="../../../icons/load_fail.png" />
+           <view class="non-data-text">没有数据哎...</view>
+         </view>
+      </view>     
+    </scroll-view>
+

@@ -1,0 +1,2 @@
+<textarea placeholder="请输入问题描述"></textarea>
+<button type="primary">提交</button>

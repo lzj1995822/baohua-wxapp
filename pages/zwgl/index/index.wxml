@@ -1,0 +1,14 @@
+<cu-custom isToMine="{{isToMine}}" bgColor="#4F5DE3" fontColor="white"><view slot="title">政务管理</view></cu-custom><image class="bg" mode="widthFix" src="cloud://baohua-47vyy.6261-baohua-47vyy-1300787128/img_cgbg.png" />
+<view class="container">
+  <view class="operation-section">
+    <navigator url="../fczs/fczs">
+      <image class="operation-item-icon" src="../../../icons/zwgl-index/img_fczs.png" />
+    </navigator>
+    <navigator url="../zcxx/zcxx">
+      <image class="operation-item-icon" src="../../../icons/zwgl-index/img_zcxx.png" />
+    </navigator>
+    <navigator url="../zzjg/zzjg">
+      <image class="operation-item-icon" src="../../../icons/zwgl-index/img_zzjg.png" />
+    </navigator>
+  </view>
+</view>

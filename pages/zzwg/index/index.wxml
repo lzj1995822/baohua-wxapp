@@ -1,0 +1,31 @@
+<cu-custom isToMine="{{isToMine}}" bgColor="#4F5DE3" fontColor="white"><view slot="title">综治网格</view></cu-custom>
+<image class="bg" mode="widthFix" src="cloud://baohua-47vyy.6261-baohua-47vyy-1300787128/img_cgbg.png" />
+<view class="container">
+
+  <view class="operation-section">
+    <navigator url="../zdrq/index/index">
+      <image class="operation-item-icon" src="../../../icons/zzwg/img_people.png" />
+    </navigator>
+    <navigator url="../jtgl/index/index">
+      <image class="operation-item-icon" src="../../../icons/zzwg/img_traffic.png" />
+    </navigator>
+    <navigator url="../fwjl/index/index">
+      <image class="operation-item-icon" src="../../../icons/zzwg/img_public.png" />
+    </navigator>
+    <navigator url="../mdjf/index/index">
+      <image class="operation-item-icon" src="../../../icons/zzwg/img_question.png" />
+    </navigator>
+    <navigator url="../shza/index/index">
+      <image class="operation-item-icon" src="../../../icons/zzwg/img_security.png" />
+    </navigator>
+    <navigator url="../zzgl/index/index">
+      <image class="operation-item-icon" src="../../../icons/zzwg/img_organization.png" />
+    </navigator>
+    <navigator url="../twxc/index/index">
+      <image class="operation-item-icon" src="../../../icons/zzwg/img_xuncha.png" />
+    </navigator>
+    <navigator url="../wtsb/index/index">
+      <image class="operation-item-icon" src="../../../icons/zzwg/img_wmcs.png" />
+    </navigator>
+  </view>
+</view>

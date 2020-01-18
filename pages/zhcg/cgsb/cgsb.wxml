@@ -1,0 +1,46 @@
+<form bindsubmit="formSubmit">
+  <view class="problem-description-section">
+    <view class="section-title">问题描述：</view>
+    <textarea class="" name="miaoshu" placeholder="请输入问题的描述..."></textarea>
+  </view>
+  <view class="problem-type-section">
+    <view class="section-title">大小类分类：</view>
+    <view class="section-row">
+      <view class="section-row-left">报送类别：</view>
+      <picker class="section-row-picker" mode="multiSelector" bindcolumnchange="chooseCategoryColumn" bindchange="chooseCategory" range="{{categoryPicker}}" value="{{categoryPickerIndex}}">
+        <view class="">{{chosenCategory?chosenCategory:'选择'}} 〉</view>
+      </picker>
+    </view>
+  </view>
+  <view class="area-section">
+    <view class="section-title">所属区域：</view>
+    <view class="section-row">
+      <view></view>
+      <picker class="area-picker" bindchange="chooseArea" range="{{areaPicker}}" value="{{areaPickerIndex}}">
+        <view class="">{{areaPickerIndex?areaPicker[areaPickerIndex]:'选择'}} 〉
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="address-section">
+    <view class="section-title">地址描述：</view>
+    <view class="section-row">
+      <view></view>
+      <view class="" catchtap="chooseAddress">{{address?address:'选择地址'}} 〉</view>
+    </view>
+  </view>
+
+  <view class="photo-section">
+    <view class="section-title">添加图片：(最多九张)</view>
+    <view class="section-body">
+      <block wx:for="{{photoUrls}}" wx:key="{{index}}">
+        <view class="photo-item">
+          <image class="photo-image" src="{{photoUrls[index]}}" mode='aspectFill' />
+          <image class="delete-icon" bindtap="deleteImage" data-index="{{index}}" src="../../../icons/bhxf-zyzzm/delete.png" />
+        </view>
+      </block>
+      <image src="../../../icons/bhxf-zyzzm/camera.png" class="image-choose" bindtap="chooseImage" wx:if="{{photoUrls.length<9}}" />
+    </view>
+  </view>
+  <button type="primary" size="default" form-type="submit">上传</button>
+</form>

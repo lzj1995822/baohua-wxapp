@@ -1,0 +1,65 @@
+<view class="container">
+  <view class="input-section">
+    <view class="input-item">
+      <view class="input-name">车主姓名</view>
+      <input class="input-value" />
+    </view>
+    <view class="input-item">
+      <view class="input-name">身份证号</view>
+      <input class="input-value" />
+    </view>
+    <view class="input-item">
+      <view class="input-name">车牌号</view>
+      <input class="input-value" />
+    </view>
+    <view class="input-item">
+      <view class="input-name">车辆类型</view>
+      <picker class="input-value" bindchange="chooseType" range="{{typePicker}}" value="{{typePickerIndex}}">
+        <view class="">{{typePickerIndex?typePicker[typePickerIndex]:'选择'}} 〉
+        </view>
+      </picker>
+    </view>
+    <view class="input-item">
+      <view class="input-name">保险情况</view>
+      <input class="input-value" />
+    </view>
+    <view class="input-item">
+      <view class="input-name">年检情况</view>
+      <input class="input-value" />
+    </view>
+    <view class="input-item">
+      <view class="input-name">联系方式</view>
+      <input class="input-value" />
+    </view>
+    <view class="input-item">
+      <view class="input-name">所属网格</view>
+      <picker class="input-value" bindchange="chooseArea" range="{{areaPicker}}" value="{{areaPickerIndex}}">
+        <view class="">{{areaPickerIndex?areaPicker[areaPickerIndex]:'选择'}} 〉
+        </view>
+      </picker>
+    </view>
+    <view class="input-item">
+      <view class="input-name">统一社会信用代码</view>
+      <input class="input-value" />
+    </view>
+    <view class="input-item">
+      <view class="input-name">备注</view>
+      <textarea class="input-value textarea" />
+    </view>
+  </view>
+
+  <view class="photo-section">
+    <view class="section-title">添加图片：(最多九张)</view>
+    <view class="section-body">
+      <block wx:for="{{photoUrls}}" wx:key="{{index}}">
+        <view class="photo-item">
+          <image class="photo-image" src="{{photoUrls[index]}}" mode='aspectFill' />
+          <image class="delete-icon" bindtap="deleteImage" data-index="{{index}}" src="/icons/bhxf-zyzzm/delete.png" />
+        </view>
+      </block>
+      <image src="/icons/bhxf-zyzzm/camera.png" class="image-choose" bindtap="chooseImage" wx:if="{{photoUrls.length<9}}" />
+    </view>
+  </view>
+
+  <button class="upload-button" type="primary">上传</button>
+</view>

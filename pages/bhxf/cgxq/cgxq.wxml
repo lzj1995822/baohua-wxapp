@@ -1,0 +1,23 @@
+<!-- 引入模板 -->
+<import src="/wxParse/wxParse.wxml"/>
+<view class="">
+  <view class="item">
+    <view class="item-row">
+      <view class="row-name">活动名称：</view>
+      <view class="row-value">{{item.hdmc}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">微体验：</view>
+      <view class="row-value">{{item.zyzwth}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">服务评价：</view>
+      <view class="row-value">{{item.fwdxpj}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">活动时间：</view>
+      <view class="row-value">{{item.createTimeStr}}</view>
+    </view>
+    <template class="content" is="wxParse" data="{{wxParseData:nr.nodes}}"/>
+  </view>
+</view>

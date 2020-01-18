@@ -1,0 +1,41 @@
+.nav-bar-container {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.nav-bar-section {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.left {
+  width: 60rpx;
+  margin-left: 20rpx;
+  height: 60rpx;
+}
+.back-icon {
+  height: 40rpx;
+  width: 40rpx;
+  margin-top:10rpx;
+  
+}
+.mine-icon {
+  height: 40rpx;
+  width: 40rpx;
+  margin-top:10rpx;
+}
+
+.title-section {
+  width: 750rpx;
+}
+
+.title {
+  margin-left: 195rpx;
+  width: 200rpx;
+  text-align: center;
+  font-size: 26rpx;
+}

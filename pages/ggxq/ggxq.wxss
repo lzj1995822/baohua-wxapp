@@ -1,0 +1,16 @@
+page{
+  background: white;
+  padding:20rpx;
+}
+.title{
+  font-size: 35rpx;
+  text-align: center;
+}
+.create-time{
+  font-size: 25rpx;
+  text-align: center;
+}
+.content{
+  font-size: 25rpx;
+  
+}

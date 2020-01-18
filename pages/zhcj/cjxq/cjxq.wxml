@@ -1,0 +1,24 @@
+<!--pages/zhcj/cjxq/cjxq.wxml-->
+<!-- 引入模板 -->
+<import src="/wxParse/wxParse.wxml"/>
+<view class="">
+  <view class="item">
+    <view class="item-row">
+      <view class="row-name">上报人：</view>
+      <view class="row-value">{{item.shangbaoren}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">问题概要：</view>
+      <view class="row-value">{{item.title}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">上报地址：</view>
+      <view class="row-value">{{item.address}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">问题描述：</view>
+      <view class="row-value">{{item.content}}</view>
+    </view>
+    <template class="content" is="wxParse" data="{{wxParseData:nr.nodes}}"/>
+  </view>
+</view>

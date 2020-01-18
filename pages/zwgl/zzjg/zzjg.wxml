@@ -1,0 +1,9 @@
+<movable-area>
+
+<movable-view  inertia='true' scale='true' scale-min="0.95" scale-max="3" out-of-bounds="false" damping="2">  
+
+<image class="big_img" mode='aspectFit' src="../../../icons/zzjg.png"></image>  
+
+</movable-view>
+
+</movable-area>  

@@ -1,0 +1,168 @@
+.head-bg {
+  width: 100%;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 850rpx;
+  align-items: center;
+  background: white;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.mine-section {
+  position: absolute;
+  left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.operation-container {
+  position: absolute;
+  bottom: 100rpx;
+  background: white;
+  height: 300rpx;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-radius: 15rpx;
+  box-shadow: 5rpx 5rpx 15rpx rgb(212, 237, 248), -5rpx 5rpx 15rpx rgb(212, 237, 248);
+}
+
+.operation-item {
+  margin: 0 20rpx;
+}
+
+.operation-icon {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.operation-text {
+  font-size: 27rpx;
+}
+
+.inform-container {
+  margin-top: 20rpx;
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inform-image {
+  width: 95%;
+  height: 150rpx;
+}
+
+.inform-section {
+  width: 94.9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rpx;
+  box-shadow: 5rpx 5rpx 15rpx rgb(212, 237, 248), -5rpx 5rpx 15rpx rgb(212, 237, 248);
+  border-radius: 0 0 15rpx 15rpx;
+}
+
+.inform-text {
+  width: 100%;
+  border-radius: 0 0 10rpx 10rpx;
+  color: #4f5de3;
+  text-align: center;
+  padding: 15rpx 0;
+}
+
+.inform-item {
+  width: 90%;
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid gainsboro;
+}
+
+.inform-item-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.inform-item-left-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25rpx;
+  color: rgb(143, 140, 140);
+  padding-top: 10rpx;
+}
+
+.inform-right {
+  color: rgb(143, 140, 140);
+}
+
+.inform-item-left-bottom-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.time-icon {
+  height: 25rpx;
+  width: 25rpx;
+  margin: 5rpx;
+}
+
+/* 文字滚动动画 */
+
+
+
+.message-container {
+  background: white;
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.message-icon {
+  height: 40rpx;
+  width: 40rpx;
+  padding: 20rpx;
+}
+
+.message-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  margin-right: 20rpx;
+}
+
+@keyframes remindMessage {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+.scroll-text {
+  font-size: 27rpx;
+  animation: remindMessage 10s linear infinite;
+}
+
+/* 文字滚动动画 */

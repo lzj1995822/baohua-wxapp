@@ -1,0 +1,26 @@
+<view class="message-section">
+  <navigator url="/pages/ggxq/ggxq">
+    <view class="message-item">
+      <image class="message-left" src="../../icons/zhcg-index/message_icon.png" />
+      <view class="message-right">
+        <view class="message-title">智慧村建系统正式上线</view>
+        <view class="message-time">
+          <image class="message-time-icon" src="../../icons/zhcg-index/img_time.png" />
+          <view class="message-time-value">2019-11-18</view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <navigator url="/pages/ggxq/ggxq">
+    <view class="message-item">
+      <image class="message-left" src="../../icons/zhcg-index/message_icon.png" />
+      <view class="message-right">
+        <view class="message-title">智慧村建系统正式上线</view>
+        <view class="message-time">
+          <image class="message-time-icon" src="../../icons/zhcg-index/img_time.png" />
+          <view class="message-time-value">2019-11-18</view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</view>

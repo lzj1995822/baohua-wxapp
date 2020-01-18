@@ -1,0 +1,40 @@
+.message-section{
+  background: white;
+  margin-top: 5rpx;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.message-item{
+  display: flex;
+  flex-direction:row;
+  border-bottom: 1rpx solid rgb(206, 203, 203);
+}
+.message-left{
+  height: 100rpx;
+  width:100rpx;
+  padding:20rpx;
+}
+.message-right{
+  width:400rpx;
+  padding-top:40rpx;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.message-time{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.message-time-icon{
+  height: 25rpx;
+  width: 25rpx;
+  margin:10rpx 10rpx 10rpx 0;
+}
+.message-time-value{
+  font-size: 25rpx;
+  color: rgb(206, 203, 203);
+}

@@ -1,0 +1,22 @@
+page{
+  height: 100vh;
+}
+
+.bg{
+  width: 100%;
+  height: 100%;
+}
+.operation-container{
+  position: absolute;
+  top:430rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding:0 30rpx;
+}
+.operation-item{
+  width:320rpx;
+  height: 230rpx;
+  padding:15rpx 0;
+}

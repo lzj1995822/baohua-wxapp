@@ -1,0 +1,156 @@
+<view class="container">
+  <form bindsubmit="submit">
+    <view class="row">
+      <view class="col">
+        <view class="input-name">姓名：</view>
+        <input class="input-value" maxlength="15" name="xm" />
+      </view>
+      <view class="col">
+        <view class="input-name">性别：</view>
+        <radio-group class="input-value gender-radio" name="xb">
+          <label>男：</label>
+          <radio value="男" />
+          <label>女：</label>
+          <radio value="女" />
+        </radio-group>
+      </view>
+    </view>
+    <view class="row">
+      <view class="col">
+        <view class="input-name">民族：</view>
+        <input class="input-value" maxlength="11" name="mz" />
+      </view>
+      <view class="col">
+        <view class="input-name">政治面貌：</view>
+        <picker bindchange="choosePartisan" range="{{partisanPicker}}" value="{{partisanPickerIndex}}">
+          <view class="input-value">{{partisanPicker[partisanPickerIndex]?partisanPicker[partisanPickerIndex]:'点击选择'}} 〉</view>
+        </picker>
+      </view>
+    </view>
+    <view class="row">
+      <view class="col">
+        <view class="input-name">身高(cm)：</view>
+        <input class="input-value" maxlength="5" type="digit" name="sg" />
+      </view>
+      <view class="col">
+        <view class="input-name">体重(kg)：</view>
+        <input class="input-value" maxlength="5" type="digit" name="tz" />
+      </view>
+    </view>
+    <view class="row">
+      <view class="col">
+        <view class="input-name">联系电话：</view>
+        <input class="input-value" maxlength="11" name="lxdh" />
+      </view>
+      <view class="col">
+        <view class="input-name">学历：</view>
+        <picker bindchange="chooseEducation" range="{{educationPicker}}" value="{{educationPickerIndex}}">
+          <view class="input-value">{{educationPicker[educationPickerIndex]?educationPicker[educationPickerIndex]:'点击选择'}} 〉</view>
+        </picker>
+      </view>
+    </view>
+    <view class="row">
+      <view class="input-name">身份证号：</view>
+      <input class="input-value" maxlength="18" type="idcard" name="sfz" />
+    </view>
+    <view class="row">
+      <view class="input-name">是否有社会保险/商业保险：</view>
+      <radio-group class="input-value gender-radio" name="bxqk">
+        <label>是：</label>
+        <radio value="0" />
+        <label>否：</label>
+        <radio value="1" />
+      </radio-group>
+    </view>
+    <view class="row">
+      <view class="input-name">工作单位：</view>
+      <input class="input-value" maxlength="15" name="gzdw" />
+    </view>
+    <view class="row">
+      <view class="input-name">单位电话：</view>
+      <input class="input-value" maxlength="11" name="dwdh" />
+    </view>
+    <view class="row">
+      <view class="input-name">居住地址：</view>
+      <input class="input-value" maxlength="15" name="jzdz" />
+    </view>
+    <view class="row">
+      <view class="input-name">紧急联系人：</view>
+      <input class="input-value" maxlength="15" name="jjlxr" />
+    </view>
+    <view class="row">
+      <view class="input-name">与本人关系：</view>
+      <input class="input-value" maxlength="5" name="ybrgx" />
+    </view>
+    <view class="row">
+      <view class="input-name">紧急联系人电话：</view>
+      <input class="input-value" maxlength="11" name="jjlxrdh" />
+    </view>
+
+    <view class="joined-team-section">
+      <view class="section-title">参加队伍（可多选）</view>
+      <checkbox-group bindchange="cjdwInput">
+        <view class="row">
+          <checkbox value="政策技术咨询志愿者服务队">政策技术咨询志愿者服务队</checkbox>
+        </view>
+        <view class="row">
+          <checkbox value="帮贫扶困志愿者服务队">帮贫扶困志愿者服务队</checkbox>
+        </view>
+        <view class="row">
+          <checkbox value="便民利民志愿者服务队">便民利民志愿者服务队</checkbox>
+        </view>
+        <view class="row">
+          <checkbox value="公益服务志愿者服务队">公益服务志愿者服务队</checkbox>
+        </view>
+        <view class="row">
+          <checkbox value="其他项目志愿者服务队">其他项目志愿者服务队</checkbox>
+        </view>
+      </checkbox-group>
+    </view>
+    <view class="add-certificate-section">
+      <view class="section-title">技能证书：</view>
+      <view class="px">
+        <block wx:for="{{px}}" wx:key="{{index}}">
+          <view class="px-item">
+            <view class="px-name">
+              {{item.zsmc}}
+            </view>
+            <image class="px-delete" src="/icons/bhxf-zyzzm/delete.png" bindtap="deletePX" data-index="{{index}}"/>
+          </view>
+        </block>
+      </view>
+      <view class="row">
+        <label>时间：</label>
+        <picker bindchange="chooseCertificateDate" mode="date" value="{{certificateDate}}">
+          <view class="input-value">{{certificateDate?certificateDate:'选择时间 〉'}}</view>
+        </picker>
+      </view>
+      <view class="row">
+        <label>培训单位：</label>
+        <input bindinput="pxdwInput" value="{{pxdw}}" placeholder="请输入培训单位名称" maxlength="15" />
+      </view>
+      <view class="row">
+        <label>证书名称：</label>
+        <input bindinput="zsmcInput" value="{{zsmc}}" placeholder="请输入证书名称" maxlength="15" />
+      </view>
+      <view class="add-certificate-button" bindtap="addPX">点击添加</view>
+    </view>
+    <view class="personal-strength-section">
+      <view class="section-title">个人特长技能：</view>
+      <view class="row">
+        <textarea value="" name="grtcjn" placeholder="请输入个人特长技能"></textarea>
+      </view>
+    </view>
+    <view class="photo-container">
+      <view class="photo-left">个人照片(选填)</view>
+      <view class="photo-right">
+        <view class="photo-image">
+          <image class="photo-image-photo" wx:if="{{photoUrls[0]}}" src="{{photoUrls[0]}}" mode='aspectFill' />
+          <image src="/icons/bhxf-zyzzm/delete.png" class="image-delete" bindtap="deleteImage" wx:if="{{photoUrls[0]}}"></image>
+        </view>
+        <image src="/icons/bhxf-zyzzm/camera.png" class="image-choose" bindtap="chooseImage" wx:if="{{!photoUrls[0]}}"></image>
+      </view>
+    </view>
+    <button type="primary" size="default" form-type="submit">上传</button>
+  </form>
+</view>

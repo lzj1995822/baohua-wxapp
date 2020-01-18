@@ -1,0 +1,32 @@
+<!--pages/zhcg/wtxq/wtxq.wxml-->
+<!-- 引入模板 -->
+<import src="/wxParse/wxParse.wxml"/>
+<view class="">
+  <view class="item">
+    <view class="item-row">
+      <view class="row-name">上报人：</view>
+      <view class="row-value">{{item.chuliren}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">上报时间：</view>
+      <view class="row-value">{{item.zyzwth}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">问题来源：</view>
+      <view class="row-value">{{item.fwdxpj}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">所属大类：</view>
+      <view class="row-value">{{item.createTimeStr}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">具体位置：</view>
+      <view class="row-value">{{item.createTimeStr}}</view>
+    </view>
+    <view class="item-row">
+      <view class="row-name">问题描述：</view>
+      <view class="row-value">{{item.createTimeStr}}</view>
+    </view>
+    <template class="content" is="wxParse" data="{{wxParseData:nr.nodes}}"/>
+  </view>
+</view>

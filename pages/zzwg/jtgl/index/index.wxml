@@ -1,0 +1,14 @@
+<view class="section">
+  <navigator class="section-item" url="../zdcl/zdcl">
+    <image class="item-icon" src="/icons/zzwg/img_car.png" />
+    <view class="item-text">重点车辆</view>
+  </navigator>
+  <navigator class="section-item" url="../zdjsy/zdjsy">
+    <image class="item-icon" src="/icons/zzwg/img_carpeople.png" />
+    <view class="item-text">重点驾驶员</view>
+  </navigator>
+  <navigator class="section-item" url="../jtsg/jtsg">
+    <image class="item-icon" src="/icons/zzwg/img_accident.png" />
+    <view class="item-text">交通事故</view>
+  </navigator>
+</view>

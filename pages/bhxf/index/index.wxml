@@ -1,0 +1,8 @@
+<cu-custom isToMine="{{isToMine}}" bgColor="#FA3530" fontColor="white"><view slot="title">宝华先锋</view></cu-custom>
+<image class="bg" src="cloud://baohua-47vyy.6261-baohua-47vyy-1300787128/img_bhxfbg.png"/>
+<view class="operation-container">
+<navigator url="/pages/bhxf/zyzzm/zyzzm"><image class="operation-item" src="../../../icons/bhxf-index/img_zyzzm.png"/></navigator>
+<navigator url="/pages/bhxf/zyhd/zyhd"><image class="operation-item" src="../../../icons/bhxf-index/img_zyhd.png"/></navigator>
+<navigator url="/pages/bhxf/zycg/zycg"><image class="operation-item" src="../../../icons/bhxf-index/img_zycg.png"/></navigator>
+<view><view class="operation-item"></view></view>
+</view>

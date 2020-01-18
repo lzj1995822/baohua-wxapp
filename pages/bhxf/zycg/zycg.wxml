@@ -1,0 +1,26 @@
+<view class="list-section">
+  <block wx:for="{{list}}" wx:key="id">
+    <navigator class="list-item" url="../cgxq/cgxq?id=id">
+      <view class="item-row">
+        <view class="row-name">活动名称：</view>
+        <view class="row-value">{{item.hdmc}}</view>
+      </view>
+      <view class="item-row">
+        <view class="row-name">活动时间：</view>
+        <view class="row-value">{{item.hdsj}}</view>
+      </view>
+      <view class="item-row">
+        <view class="row-name">服务类别：</view>
+        <view class="row-value">{{item.fwlb}}</view>
+      </view>
+      <view class="item-row">
+        <view class="row-name">活动地址：</view>
+        <view class="row-value">{{item.hddz}}</view>
+      </view>
+    </navigator>
+  </block>
+  <view wx:if="{{list.length == 0}}" class="non-data-section">
+    <image class='non-data-icon' src="/icons/load_fail.png" />
+    <view class="non-data-text">没有数据哎...</view>
+  </view>
+</view>

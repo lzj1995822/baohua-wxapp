@@ -1,0 +1,13 @@
+<view class="row">
+  <view class="row-name">旧密码：</view>
+  <input class="row-value" type="password" placeholder="请输入旧密码"/>
+</view>
+<view class=" row">
+  <view class="row-name">新密码：</view>
+  <input class="row-value " type="password" placeholder="请输入新密码"/>
+</view>
+<view class="row">
+  <view class="row-name">确认密码：</view>
+  <input class="row-value" type="password" placeholder="请再次输入新密码" />
+</view>
+<button type="primary">提交</button>

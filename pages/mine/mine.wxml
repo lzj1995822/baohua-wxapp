@@ -1,0 +1,48 @@
+<view class="container">
+  <navigator class="userinfo-section" url="./grxx/grxx">
+    <image class="head-bg" src="/icons/mine/img_headbg.png" />
+    <view class="useninfo-content">
+      <image class="head-img" src="/icons/mine/touxiang_default.png" />
+      <view class="userinfo-center">
+        <view class="userinfo-nickname">{{userInfo.uinickname}}</view>
+        <view class="userinfo-department">部门：{{userInfo.uisubordinatedepartment}}</view>
+      </view>
+      <image class="userinfo-detail-icon" src="/icons/mine/img_whiteright.png" />
+    </view>
+  </navigator>
+  <view class="operation-section">
+    <navigator class="operation-item" url="./ggmm/ggmm">
+      <view class="operation-left">
+        <image class="operation-left-icon" src="/icons/mine/img_xgmm.png" />
+        <view class="operation-left-text">修改密码</view>
+      </view>
+      <view class="operation-right">
+        <view class="operation-right-text"></view>
+        <image class="operation-right-icon" src="/icons/xiangyou.png" />
+      </view>
+    </navigator>
+
+    <navigator class="operation-item" url="./yjfk/yjfk">
+      <view class="operation-left"> 
+        <image class="operation-left-icon" src="/icons/mine/img_yjfk.png" />
+        <view class="operation-left-text">意见反馈</view>
+      </view>
+      <view class="operation-right">
+        <view class="operation-right-text"></view>
+        <image class="operation-right-icon" src="/icons/xiangyou.png" />
+      </view>
+    </navigator>
+
+    <view class="operation-item">
+      <view class="operation-left">
+        <image class="operation-left-icon" src="/icons/mine/img_gy.png" />
+        <view class="operation-left-text">关于</view>
+      </view>
+      <view class="operation-right">
+        <view class="operation-right-text">版本1.8</view>
+        <image class="operation-right-icon" src="/icons/xiangyou.png" />
+      </view>
+    </view>
+  </view>
+  <view class="logout-section" bindtap="logout">退出登录</view>
+</view>

@@ -1,0 +1,59 @@
+page{
+background: white;
+}
+.section-title{
+  background: rgb(209, 211, 214);
+  padding:15rpx;
+  
+}
+.problem-description-section{
+  
+}
+textarea{
+  padding:15rpx;
+}
+.problem-type-section{
+}
+.section-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:15rpx;
+}
+.section-row-input{
+  flex-grow: 1;
+}
+.area-picker{
+}
+.photo-section{
+
+}
+.section-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding:10rpx;
+}
+.photo-item{
+  height:130rpx;
+  width:130rpx;
+  position: relative;
+  margin:20rpx;
+}
+.photo-image{
+  height: 100%;
+  width: 100%;
+}
+.delete-icon{
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  top: -5rpx;
+  right: -5rpx;
+}
+.image-choose{
+  height:100rpx;
+  width:100rpx;
+  margin-left: 20rpx;
+}
