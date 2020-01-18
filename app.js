@@ -13,6 +13,7 @@ App({
   globalData: {
     userInfo: null,
     // HTTPS
-    domain: "https://bh.smartjt.cn/"
+    // domain: "https://bh.smartjt.cn/",
+    domain: "http://122.97.218.162:28887/"
   }
 })

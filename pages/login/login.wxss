@@ -19,19 +19,29 @@
   padding:10rpx 50rpx;
 }
 .username,.password{
-  margin: 20rpx 80rpx;
-  border-bottom: 1rpx solid gainsboro;
-  padding:5px;
+  flex: 2;
 }
 .remeber{
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-  margin-right: 100rpx;
+  margin:  0 25px;
+  align-items: center;
 }
 .remeber-checkbox{
-  height: 20rpx;
-  width: 20rpx;
+  height: 18px;
+  width: 18px;
 }
 .login-button{
-  margin-top: 40rpx;
+  flex: 1;
+}
+.login-input {
+  display: flex;
+  flex-direction: row;
+  margin:  30px 25px;
+  border-bottom: 1px solid rgb(165, 165, 165);
+  align-items: center;
+}
+.login-input text {
+  padding: 10px;
 }
