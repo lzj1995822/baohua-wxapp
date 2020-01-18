@@ -44,4 +44,5 @@
 }
 .login-input text {
   padding: 10px;
+  color: rgb(165, 165, 165);
 }
