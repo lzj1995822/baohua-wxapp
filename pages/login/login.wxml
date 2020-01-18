@@ -5,11 +5,11 @@
     <view class="input-section">
       <view class="login-input">
         <text>账号</text>
-        <input class="username" name="username" type="text" value="{{username}}" placeholder=""></input>
+        <input class="username" name="username" type="text" value="{{username}}"></input>
       </view>
       <view class="login-input">
         <text>密码</text>
-        <input class="password" name="password" type="password" value="{{password}}" placeholder=""></input>
+        <input class="password" name="password" type="password" value="{{password}}"></input>
       </view>
       <view class="remeber">
         <checkbox bindtap="clickRemember" checked="{{remember}}"></checkbox>

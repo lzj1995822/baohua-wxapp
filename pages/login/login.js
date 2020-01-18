@@ -7,8 +7,8 @@ Page({
   data: {
     remember: false,
     //缓存中账号密码
-    username: null,
-    password: null
+    username: 'admin1',
+    password: 'Bh#96296'
   },
 
   /**
